@@ -4,20 +4,21 @@
 var inputGuess;
 
 var randomNum = Math.floor(Math.random()*100);
-var guesser = function() {
+console.log(randomNum);
+var guesser = function(num) {
 while(true) {
 	// inputGuess = parseInt(inputGuess,10);
 	
-			if (inputGuess === randomNum) {
-				console.log("Your Guess Was Just Right!");
-				break;
+			if (num === randomNum) {
+				$("#alert_area").html("Your Guess Was Just Right!");
+			} else if (num < randomNum) {
+				$("#alert_area").html("Yikes! Too Low!");
+			} else if (num > randomNum) {
+				$("#alert_area").html("Yikes! Too High!");
+			} else {
+				return;
 			}
-			if (inputGuess < randomNum) {
-				console.log("Yikes! Too Low!");
-			}
-			if (inputGuess > randomNum) {
-				console.log("Yikes! Too High!");
-			}
+			break ;
 		}
 		
 }
@@ -25,5 +26,5 @@ while(true) {
 $("#submit_guess").click(function (event) { 
 	console.log("button click");
 	inputGuess = parseInt($("#input_guess").val());
-	guesser();
+	guesser(inputGuess);
 }); 
