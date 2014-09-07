@@ -1,0 +1,58 @@
+body {
+	margin:10px;
+	background: skyblue;
+	color: black;
+	background-image: url('../img/appBackground.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+}
+#wrapper {
+	text-align: center;
+}
+section {
+	margin: auto;
+	padding-top: 20px;
+	width: 40%;
+	border-radius: 20px;
+	background-color: lightsteelblue;
+	color: black;
+}
+input {
+	margin: 20px;
+	height: 30px;
+	width: 50%;
+}
+
+input:hover {
+	border-width: 1px;
+	border-color: blue;
+}
+
+button {
+	background-color: rgba(148,0,211, 0.5);
+	color: white;
+	padding: 20px 20px;
+	margin: 20px;
+	border-radius: 10px;
+	border-style: none;
+}
+
+button:hover {
+	background-color: rgba(148,0,211, 0.8);
+	box-shadow: 5px 5px 5px black;
+}
+
+#alert_area {
+	padding: 10px;
+	margin: 30px auto;
+	background-color: rgba(148,0,211, 0.5);
+	color: white;
+	border-radius: 10px;
+	width: 40%;
+	height: 40px;
+	padding-top: 20px;
+}
+section:hover {
+	background-image: url('../img/think.jpg');
+	background-position: center;
+}
