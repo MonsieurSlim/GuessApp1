@@ -14,7 +14,7 @@ section {
 	padding-top: 20px;
 	width: 40%;
 	border-radius: 20px;
-	background-color: gray;
+	background-color: lightsteelblue;
 	color: black;
 }
 input {
@@ -29,7 +29,7 @@ input:hover {
 }
 
 button {
-	background-color: navy;
+	background-color: rgba(148,0,211, 0.5);
 	color: white;
 	padding: 20px 20px;
 	margin: 20px;
@@ -38,14 +38,14 @@ button {
 }
 
 button:hover {
-	background-color: green;
+	background-color: rgba(148,0,211, 0.8);
 	box-shadow: 5px 5px 5px black;
 }
 
 #alert_area {
 	padding: 10px;
 	margin: 30px auto;
-	background-color: green;
+	background-color: rgba(148,0,211, 0.5);
 	color: white;
 	border-radius: 10px;
 	width: 40%;
